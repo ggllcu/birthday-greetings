@@ -16,3 +16,11 @@ cd birthday-greetings
 ```
 cd php && docker  run  -v $PWD:$PWD -w $PWD -i -t  php:cli-alpine php index.php
 ```
+
+## Test cases
+
+- YYYY/02/28 -> Two birthdays, one 28/02 and one 29/02 (the year must be a leap year), three non birthday emails
+- YYYY/02/29 -> No birthdays, already sent on 28/02; no email
+- YYYY/08/15 -> Three birthdays, two non birthday emails
+- Other days -> No birthdays, no email
+
