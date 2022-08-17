@@ -14,6 +14,5 @@ cd birthday-greetings
 ### PHP
 
 ```
-cd php
-docker  run  -v $PWD:$PWD -w $PWD -i -t  php:cli-alpine php index.php
+cd php && docker  run  -v $PWD:$PWD -w $PWD -i -t  php:cli-alpine php index.php
 ```
